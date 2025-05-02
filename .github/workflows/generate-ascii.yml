@@ -7,17 +7,25 @@ jobs:
             - name : checkout
               uses: actions/checkout@v4
             
-            - name: INstall coowsay
-              run : sudo apt-get install cowsay -y
+            # - name: INstall coowsay
+            #   run : sudo apt-get install cowsay -y
 
-            - name: Execute coysaw cmd
-              run : cowsay -f dragon "run for cover, I am a dragon" >> dragon.txt
+            # - name: Execute coysaw cmd
+            #   run : cowsay -f dragon "run for cover, I am a dragon" >> dragon.txt
 
-            - name: test file exists
-              run: grep -i "dragon" dragon.txt
+            # - name: test file exists
+            #   run: grep -i "dragon" dragon.txt
 
-            - name: Read file
-              run: cat dragon.txt
+            # - name: Read file
+            #   run: cat dragon.txt
             
-            - name: chckeout repo files
-              run : ls -ltra
+            # - name: chckeout repo files
+            #   run : ls -ltra
+
+            - name: List files
+              run: ls -ltra
+            
+            - name : Executing shell script
+              run: ./ascii-script.sh
+
+            
