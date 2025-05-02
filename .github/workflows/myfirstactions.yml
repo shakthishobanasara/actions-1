@@ -7,9 +7,14 @@ jobs:
             - name: welcome message
               run: echo "My first Gthub actions job"
 
+            - name: Checkout
+              uses: actions/checkout@v4
+
             - name: List files
               run : ls
 
             - name: Readfile
               run: cat README.md
+
+
              
