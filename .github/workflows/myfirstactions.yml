@@ -12,3 +12,6 @@ jobs:
                echo "welcome to my first actions"
                ls -ltra
                cat README.md
+            
+            - name: generate ASCII
+              run: cowsay -f dragon "Run for cover , I AM A DRAGON --- RAWR" >> dragon.txt
